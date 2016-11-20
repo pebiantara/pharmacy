@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="pharmacy">
+  <head>
+    <title>SystemPharmacy</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <base href="/">
+  </head>
+  <body>
+  	<nav>
+      <ul>
+        <li>
+         <a href="/products">Products</a>
+         <a href="/customers">Customers</a>
+        </li>
+      </ul>
+  	</nav>
+    <div class="container" ng-view>
+      <%= yield %>
+    </div>
+  </body>
+</html>
