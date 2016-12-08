@@ -30,10 +30,20 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'stripe'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'angularjs-rails'
 gem 'angular-rails-templates'
+
+gem 'devise'
+
+gem "paranoia", "~> 2.2"
+
+gem 'kaminari'
+
+gem 'annotate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
